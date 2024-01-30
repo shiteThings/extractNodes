@@ -50,11 +50,6 @@ https://chromenodes.marcol.top/
 - [clashx.meta](https://github.com/MetaCubeX/ClashX.Meta/releases)
 - [clash verge](https://github.com/zzzgydi/clash-verge/releases) 
 - shadowrocket
-
-## 致谢
-
-- [绵阿羊](https://github.com/vveg26/chromego_merge)
-
 ## cloudflare worker部署命令
 
 [具体部署操作可以观看视频教学](https://www.youtube.com/watch?v=cthl7LLbTv0&t=6s)
@@ -62,6 +57,10 @@ https://chromenodes.marcol.top/
 创建项目
 
 >npm create cloudflare@latest
+
+安装依赖js-yaml
+
+> npm install js-yaml
 
 测试
 
@@ -71,3 +70,8 @@ https://chromenodes.marcol.top/
 
 > wrangler deploy
 
+## 致谢
+
+- [绵阿羊](https://github.com/vveg26/chromego_merge)
+
+## 
