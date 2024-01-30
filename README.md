@@ -13,27 +13,18 @@
 ### 不套warp版本（clashmeta）
 
 ```
-#worker地址被墙
-https://chromegoclash.amazinglinyy.workers.dev/
-#自定义域名，可直接访问
 https://chromegoclash.marcol.top/
 ```
 
 ### 套warp版本（clashmeta）可以访问被限制的网站（如p站等）
 
 ```
-#worker地址被墙
-https://chromegoclashwarp.amazinglinyy.workers.dev
-#自定义域名，可直接访问
 https://chromegoclashwarp.marcol.top/
 ```
 
 ### 通用base64链接 （shadowrocket和nekoray系列）
 
 ```
-#worker地址被墙
-https://chromegolatest.amazinglinyy.workers.dev/
-#自定义域名，可直接访问
 https://chromenodes.marcol.top/
 ```
 
