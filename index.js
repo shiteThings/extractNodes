@@ -3,6 +3,8 @@ addEventListener('fetch', event => {
 });
 // 存储拼接后的字符串，用于去重
 const uniqueStrings = new Set();
+
+
 async function handleRequest(request) {
 	// 定义要发送请求的地址数组，每个元素包含一个 url 和一个处理函数
 
@@ -56,10 +58,10 @@ async function handleRequest(request) {
 		{ url: "https://raw.githubusercontent.com/Alvin9999/pac2/master/quick/3/config.yaml", type: "clash" },
 
 		//naive		
-		// { url: "https://www.gitlabip.xyz/Alvin9999/PAC/master/naiveproxy/1/config.json", type: "naiveh" },
-		// { url: "https://gitlab.com/free9999/ipupdate/-/raw/master/naiveproxy/config.json", type: "naive" },
-		// { url: "https://www.githubip.xyz/Alvin9999/PAC/master/naiveproxy/config.json", type: "naive" },
-		// { url: "https://fastly.jsdelivr.net/gh/Alvin9999/PAC@latest/naiveproxy/config.json", type: "naive" },
+		{ url: "https://www.gitlabip.xyz/Alvin9999/PAC/master/naiveproxy/1/config.json", type: "naiveh" },
+		{ url: "https://gitlab.com/free9999/ipupdate/-/raw/master/naiveproxy/config.json", type: "naive" },
+		{ url: "https://www.githubip.xyz/Alvin9999/PAC/master/naiveproxy/config.json", type: "naive" },
+		{ url: "https://fastly.jsdelivr.net/gh/Alvin9999/PAC@latest/naiveproxy/config.json", type: "naive" },
 		// 添加更多的网站地址和类型...
 	];
 
@@ -73,7 +75,7 @@ async function handleRequest(request) {
 
 	const encoder = new TextEncoder();
 	const bufferFromStr = encoder.encode(mergedContent);
-
+	
 	// 使用 btoa 将二进制数据转为 Base64 编码的字符串
 	const base64Str = btoa(String.fromCharCode.apply(null, new Uint8Array(bufferFromStr)));
 
@@ -342,6 +344,7 @@ function processClash(data) {
 			let ws_headers_host = ws_headers.host ?? ''
 			let name = proxy.name ?? 'vms'
 			let formattedString = `vmess://${uuid}@${server}:${port}?security=${security}&allowInsecure${insecure}&type=${network}&fp=${fp}&sni=${sni}&path=${ws_path}&host=${ws_headers_host}#vms`
+	
 			uniqueStrings.add(formattedString)
 		}
 		else if (type === 'tuic') {
@@ -365,15 +368,16 @@ function processClash(data) {
 			let server = proxy.server
 			let port = proxy.port
 			let password = proxy.password ?? ''
-			// 使用 Base64 编码对密码进行编码
-			password = btoa(unescape(encodeURIComponent(password)));
+		
 			let cipher = proxy.cipher ?? ''
-			//  生成url
-			let ss_url = `${cipher}:${password}@${server}:${port}`
+			//  生成url @${server}:${port}
+			let ss_url = `${cipher}:${password}`
 			// 使用 Base64 编码对配置信息进行编码
 			ss_url = btoa(unescape(encodeURIComponent(ss_url)));
+			let ss_meta = `ss://${ss_url}@${server}:${port}`
+			// console.log(ss_meta)x
+	
 
-			let ss_meta = `ss://${ss_url}`
 			uniqueStrings.add(ss_meta)
 
 		}
