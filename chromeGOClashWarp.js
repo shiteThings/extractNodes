@@ -87,15 +87,24 @@ async function handleRequest(request) {
 
 	let proxiesNames = []
 	for (let i = 0; i < proxiesArray.length; i++) {
-		var obj = JSON.parse(proxiesArray[i])
-		obj.name = "节点"+ (i+1)
-	
-		proxiesArray[i] = JSON.stringify(obj)
-		proxiesNames.push(obj.name)
+		try {
+			var obj = JSON.parse(proxiesArray[i])
+			obj.name = "节点"+ (i+1)
 
+			proxiesArray[i] = JSON.stringify(obj)
+			proxiesNames.push(obj.name)
+		} catch (error) {
+			console.error(`Error ==================== ${i}: ${error}`);
+		}
 	}
 
-	const yamlString = proxiesArray.map(proxy => `- ${JSON.stringify(proxy).slice(1, -1)}`).join('\n').replace(/\\/g, '');  // 使用正则表达式替换所有的反斜杠
+	const yamlString = proxiesArray.map(proxy => {
+		try {
+			`- ${JSON.stringify(proxy).slice(1, -1)}`
+		} catch (error) {
+			console.error(`Error ==================== ${error}`);
+		}
+	}).join('\n').replace(/\\/g, '');  // 使用正则表达式替换所有的反斜杠
 
 	// 使用 Array.map 处理每个数组元素，添加缩进
 	const indentedArray = proxiesNames.map(item => `  - ${item}`);
