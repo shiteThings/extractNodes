@@ -25,7 +25,7 @@ https://chromegoclashwarp.marcol.top/
 ### 通用base64链接 （shadowrocket和nekoray系列）
 
 ```
-https://chromenodes.marco.us.kg/
+https://gob64.marcoshz.ggff.net/
 ```
 
 
