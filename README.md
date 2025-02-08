@@ -30,6 +30,7 @@ https://gob64.marcoshz.ggff.net/
 
 
 ## 客户端推荐
+karing: https://karing.app/download 全平台可用的免费客户端，但是不开源
 
 ### Windows
 
