@@ -36,6 +36,7 @@ karing: https://karing.app/download 全平台可用的免费客户端，但是�
 
 - [clash verge](https://github.com/zzzgydi/clash-verge/releases) 
 - [nekoray](https://github.com/MatsuriDayo/nekoray)
+- [mihomo party](https://github.com/mihomo-party-org/mihomo-party/releases/latest)
 
 ### android
 
