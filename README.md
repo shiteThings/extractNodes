@@ -2,12 +2,6 @@
 
 提取chromeGO/edgeGo等里面的节点到通用客户端使用
 
-## 注意事项
-
-套上warp可绕过chromego封锁的网站（P，X）
-
-开启浏览器自带doh以及客户端tun模式也可绕过封锁，参考：[开启chrome自带doh](https://blog.mareep.net/posts/9993/)
-
 ## 订阅链接分享
 <mark>所有订阅链接均可以访问老司机内容，学习驾驶技术<mark>
 
