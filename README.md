@@ -23,7 +23,7 @@ https://goclash.topmarco.tech/
 https://chromegoclashwarp.marcol.top/sb
 ```
 
-### 通用base64链接 （此订阅链接已不在维护）
+### 通用base64链接 （<mark>此订阅链接已不在维护，推荐使用singbox或者clash订阅链接<mark>）
 
 ```
 https://gob64.topmarco.tech
