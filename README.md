@@ -9,20 +9,21 @@
 开启浏览器自带doh以及客户端tun模式也可绕过封锁，参考：[开启chrome自带doh](https://blog.mareep.net/posts/9993/)
 
 ## 订阅链接分享
+==所有订阅链接均可以访问老司机内容，学习驾驶技术==
 
-### 不套warp版本（clashmeta）
+### clash订阅链接（clash meta内核系客户端使用）
 
 ```
 https://goclash.topmarco.tech/
 ```
 
-### 套warp版本（clashmeta）可以访问被限制的网站（如p站等）
+### singbox订阅链接（除了windows平台无图形客户端，其他平台均有图形化界面客户端)
 
 ```
-https://chromegoclashwarp.marcol.top/
+https://chromegoclashwarp.marcol.top/sb
 ```
 
-### 通用base64链接 （shadowrocket和nekoray系列）
+### 通用base64链接 （此订阅链接已不在维护）
 
 ```
 https://gob64.topmarco.tech
@@ -35,23 +36,26 @@ karing: https://karing.app/download 全平台可用的免费客户端，但是�
 ### Windows
 
 - [clash verge](https://github.com/zzzgydi/clash-verge/releases) 
-- [nekoray](https://github.com/MatsuriDayo/nekoray)
 - [mihomo party](https://github.com/mihomo-party-org/mihomo-party/releases/latest)
+- singbox需要跑内核使用
 
 ### android
 
 - [nekobox](https://github.com/MatsuriDayo/NekoBoxForAndroid)
 - [clashmeta for android](https://github.com/MetaCubeX/ClashMetaForAndroid/releases)
+- [sing-box-android](https://github.com/SagerNet/sing-box/releases/latest)
 
 ### ios
 
 - shadowrocket
+- sing-box
 
 ### macos
 
 - [clashx.meta](https://github.com/MetaCubeX/ClashX.Meta/releases)
-- [clash verge](https://github.com/zzzgydi/clash-verge/releases) 
-- shadowrocket
+- [clash verge](https://github.com/zzzgydi/clash-verge/releases)
+- [mihomo party](https://github.com/mihomo-party-org/clash-party/releases/latest)
+- [sing-box](https://github.com/SagerNet/sing-box/releases/latest)
 ## cloudflare worker部署命令
 
 [具体部署操作可以观看视频教学](https://www.youtube.com/watch?v=cthl7LLbTv0&t=6s)
