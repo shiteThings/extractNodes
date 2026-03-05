@@ -11,7 +11,7 @@
 https://chg26.makou.cc.cd/
 ```
 
-### singbox订阅链接（除了windows平台无图形客户端，其他平台均有图形化界面客户端)
+### singbox订阅链接 不要用1.13内核（除了windows平台无图形客户端，其他平台均有图形化界面客户端)
 
 ```
 https://chg26.makou.cc.cd/sb
