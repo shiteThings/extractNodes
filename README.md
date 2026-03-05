@@ -8,19 +8,19 @@
 ### clash订阅链接（clash meta内核系客户端使用）
 
 ```
-https://go6.marcozf.top/
+https://chg26.makou.cc.cd/
 ```
 
 ### singbox订阅链接（除了windows平台无图形客户端，其他平台均有图形化界面客户端)
 
 ```
-https://go6.marcozf.top/sb
+https://chg26.makou.cc.cd/sb
 ```
 
 ### 通用base64链接 （<mark>此订阅链接已不在维护，推荐使用singbox或者clash订阅链接<mark>）
 
 ```
-https://go64.marcozf.top
+https://chg64.makou.cc.cd/
 ```
 
 
